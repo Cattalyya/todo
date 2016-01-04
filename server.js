@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 3000;
 var todos = [];
 var todoNextId = 1;
 
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
 app.use(express.static(__dirname+'/public'));
 
 /*
@@ -20,6 +20,7 @@ app.get('/', function(req, res) {
 */
 
 // GET /todos?completed=true&keyword=work
+/*
 app.get('/todos', middleware.requireAuthentication, function(req, res){
 	var query  = req.query;
 	var where =  {
@@ -187,4 +188,5 @@ db.sequelize.sync({force: true}).then( function(){
 	});
 } );
 
+*/
 
