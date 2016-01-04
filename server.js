@@ -13,9 +13,11 @@ var todoNextId = 1;
 app.use(bodyParser.json());
 app.use(express.static(__dirname+'/public'));
 
+/*
 app.get('/', function(req, res) {
 	res.send('<h1>Todo API Root</h1>');
 });
+*/
 
 // GET /todos?completed=true&keyword=work
 app.get('/todos', middleware.requireAuthentication, function(req, res){
